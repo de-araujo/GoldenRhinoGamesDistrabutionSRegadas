@@ -1,0 +1,51 @@
+﻿<Window x:Class="GoldenRhinoGameDistribution.AddGame"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoldenRhinoGameDistribution"
+        mc:Ignorable="d"
+        Title="AddGame" Background="#FF4E0002" Height="800" Width="300" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Foreground="#FFFFC926" Content="Add Your Game Here" HorizontalContentAlignment="Center"/>
+        <Label Grid.Row="1" Content="Title:" Foreground="#FFFFC926"></Label>
+        <TextBox Grid.Row="1" Height="20" x:Name="tbTitle" Foreground="#FFFFC926" VerticalAlignment="Center" Background="#FF8F0000" BorderBrush="#FFFFC926" />
+        <Label Grid.Row="2" Content="Title Type:" Foreground="#FFFFC926"></Label>
+        <TextBox Grid.Row="2" x:Name="tbTitleType" Height="20" Foreground="#FFFFC926" VerticalAlignment="Center" Background="#FF8F0000" BorderBrush="#FFFFC926" />
+        <Label Grid.Row="3" Content="Company:" Foreground="#FFFFC926"></Label>
+        <TextBox x:Name="tbCompany" Grid.Row="3" Height="20" VerticalAlignment="Center" Foreground="#FFFFC926" Background="#FF8F0000" BorderBrush="#FFFFC926" />
+        <Label Grid.Row="4" Content="Developers:" Foreground="#FFFFC926"></Label>
+        <TextBox Grid.Row="4" x:Name="tbDevelopers" Height="20" Foreground="#FFFFC926" VerticalAlignment="Center" Background="#FF8F0000" BorderBrush="#FFFFC926"  />
+
+        <Button Grid.Row="5" x:Name="ImagePickerButton" Content="image" Foreground="#FFFFC926" Background="#FF8F0000" BorderBrush="#FFFFC926" Click="ImagePickerButton_Click"/>
+
+        <Label Grid.Row="6" Content="Genre:" Foreground="#FFFFC926"></Label>
+        <TextBox Grid.Row="6" Height="20" x:Name="tbGenre" Foreground="#FFFFC926" VerticalAlignment="Center" Background="#FF8F0000" BorderBrush="#FFFFC926" />
+        <Label Grid.Row="7" Content="Cost to Company:" Foreground="#FFFFC926"></Label>
+        <TextBox Grid.Row="7" Height="20" x:Name="tbCompanyCost" Foreground="#FFFFC926" VerticalAlignment="Center" Background="#FF8F0000" BorderBrush="#FFFFC926" />
+        <Label Grid.Row="8" Content="Price" Foreground="#FFFFC926"></Label>
+        <TextBox Grid.Row="8" Height="20" x:Name="tbPrice" Foreground="#FFFFC926" VerticalAlignment="Center" Background="#FF8F0000" BorderBrush="#FFFFC926"/>
+        <Label Grid.Row="9" Content="Quantity" Foreground="#FFFFC926"></Label>
+        <TextBox Grid.Row="9" Height="20" x:Name="tbQuantity" Foreground="#FFFFC926" VerticalAlignment="Center" Background="#FF8F0000" BorderBrush="#FFFFC926" />
+        <Label Grid.Row="10" Content="Release Date" Foreground="#FFFFC926"></Label>
+        <DatePicker Grid.Row="10" Foreground="#FFFFC926" x:Name="tbRelease" Height="29" VerticalAlignment="Center" Background="#FF8F0000" BorderBrush="#FFFFC926" Margin="0,20,0,10" />
+        <Label Grid.Row="11" Content="Delevery Type" Foreground="#FFFFC926"></Label>
+        <TextBox Grid.Row="11" Height="20" x:Name="tbDeliveryType" Foreground="#FFFFC926" VerticalAlignment="Center" Background="#FF8F0000" BorderBrush="#FFFFC926" />
+        <Button Grid.Row="12" Content="submit" Foreground="#FFFFC926" Background="#FF8F0000" BorderBrush="#FFFFC926" Click="Submit_Click"/>
+    </Grid>
+</Window>

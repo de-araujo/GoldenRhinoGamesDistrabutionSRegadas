@@ -1,0 +1,36 @@
+﻿<Window x:Class="GoldenRhinoGameDistribution.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoldenRhinoGameDistribution"
+        mc:Ignorable="d"
+        Title="Home" Height="450" Width="800" WindowStartupLocation="CenterScreen"  Background="#FF4E0002">
+    <Grid>
+        <Grid Background="#FF4E0002">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="52*"/>
+                <RowDefinition Height="320*"/>
+            </Grid.RowDefinitions>
+
+            <Rectangle Grid.ColumnSpan="5" Fill="#FF8E0004"/>
+            <Image Grid.Column="0"  Source="/images/GRV1Icon.ico" HorizontalAlignment="Left" Margin="60,-3,0,5"/>
+            <Button Grid.Column="1" x:Name="btnStore" Content="Store" Background="#FF8E0004"  BorderBrush="#FF8E0004" FontSize="16" Style="{StaticResource TopBar}" Click="btnLibrary_Click" Height="31" VerticalAlignment="Top" />
+            <Button Grid.Column="2" x:Name="btnLibrary" Content="Library"  Background="#FF8E0004"  BorderBrush="#FF8E0004" FontSize="16" Style="{StaticResource TopBar}" Click="btnLibrary_Click"></Button>
+            <Image x:Name="Home" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="4" Source="https://compass-ssl.xbox.com/assets/34/bb/34bb1efc-0142-4ef3-bb04-c15c8439937e.jpg?n=Minecraft_Sneaky-Slider-1084_Buzzy-Bees_1600x675.jpg"/>
+            <Button Grid.Column="1" Grid.Row="1" x:Name="btnBrowse" Content="Browse" Style="{StaticResource TopBar}" HorizontalContentAlignment="Left"  Foreground="#FFFFC926" FontSize="16" Background="#FF454545" BorderBrush="#FF454545"/>
+            <Rectangle Grid.Column="0" Grid.Row="1" Fill="#454545"  Grid.RowSpan="3"/>
+            <Button Grid.Row="1" Grid.Column="2" Content="Featured" Style="{StaticResource TopBar}" HorizontalContentAlignment="Left" Foreground="#FFFFC926" FontSize="16" Background="#FF454545" BorderBrush="#FF454545" />
+            <Button Grid.Column="3" x:Name="btnAddGame" Content="Add Game"  Background="#FF8E0004"  BorderBrush="#FF8E0004" FontSize="16" Style="{StaticResource TopBar}" Click="btnAddGame_Click"></Button>
+
+        </Grid>
+    </Grid>
+</Window>

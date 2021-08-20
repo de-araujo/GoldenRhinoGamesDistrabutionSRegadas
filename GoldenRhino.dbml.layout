@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GoldenRhino">
+  <DataContextMoniker Name="/GoldenRhinoDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a5a262f0-00be-44eb-8de5-ec3243f0e35a" absoluteBounds="8.5, 1.375, 2, 3.1170068359375">
+      <DataClassMoniker Name="/GoldenRhinoDataContext/Game" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b0b5ced3-5b31-4577-8264-03000c6a192f" absoluteBounds="8.515, 1.835, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d19d52ae-4cb8-441d-898e-b93ff3c9d0fd" absoluteBounds="0.5, 1.25, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/GoldenRhinoDataContext/Login_reg" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ddd5295a-7559-4c47-a078-c9cbf109da4e" absoluteBounds="0.51499999999999968, 1.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ed686292-6b34-4f4f-9ffd-5aad3431c423" absoluteBounds="4.625, 1.5, 2, 1.1939925130208333">
+      <DataClassMoniker Name="/GoldenRhinoDataContext/Purchace" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f9b7722-4323-4bfb-8b62-b9c7963edb7e" absoluteBounds="4.64, 1.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.5 : 1.96875); (6.625 : 1.96875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GoldenRhinoDataContext/Game/Game_Purchace" />
+      <nodes>
+        <classShapeMoniker Id="a5a262f0-00be-44eb-8de5-ec3243f0e35a" />
+        <classShapeMoniker Id="ed686292-6b34-4f4f-9ffd-5aad3431c423" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 2.09699625651042); (4.625 : 2.09699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/GoldenRhinoDataContext/Login_reg/Login_reg_Purchace" />
+      <nodes>
+        <classShapeMoniker Id="d19d52ae-4cb8-441d-898e-b93ff3c9d0fd" />
+        <classShapeMoniker Id="ed686292-6b34-4f4f-9ffd-5aad3431c423" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

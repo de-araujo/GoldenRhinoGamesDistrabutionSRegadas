@@ -1,0 +1,32 @@
+﻿<Window x:Class="GoldenRhinoGameDistribution.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GoldenRhinoGameDistribution"
+        mc:Ignorable="d"
+        Title="Login" Height="450" Width="400" WindowStartupLocation="CenterScreen" FocusManager.FocusedElement="{Binding ElementName=tbUsername}">
+    <Grid Grid.Row="1" Background="#FF454545">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Image Grid.Row="0" Source="https://avatar-management--avatars.us-west-2.prod.public.atl-paas.net/default-avatar.png"/>
+        <Label Grid.Row="1" Height="30" FontSize="15" FontFamily="comic sans" Margin="0,0,0,75" Foreground="White" Content="Username" />
+        <TextBox x:Name="tbUsername" FontSize="30" Grid.Row="1" Margin="0,30,0,22" Foreground="White" BorderBrush="#FF6A6A6A" Background="#454545" />
+        <Label Grid.Row="2" Height="30" FontSize="15" Margin="0,0,0,75" Foreground="White" Content="password"/>
+        <PasswordBox x:Name="tbPassword" Height="40" FontSize="30" Grid.Row="2" Margin="0,30,0,35" BorderBrush="#FF6A6A6A" Background="#454545" Foreground="White"/>
+        <DockPanel Grid.Row="3">
+            <Button Margin="70,0,0,0" x:Name="btnLogin" Height="40" Width="100" Content="login" Background="#FF0CFF00" Click="btnLogin_Click"/>
+            <Button x:Name="btnRegister" Height="40" Width="100"  Content="Register" Background="#FF0CFF00" Click="btnRegister_Click"/>
+        </DockPanel>
+
+
+    </Grid>
+</Window>
